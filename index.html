@@ -5,25 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
+<style>
+    #category{
+        display: flex;
+    }
+    .container{
+        border: 1px solid green;
+        width:100%
+    }
+</style>
 <body>
     <section id="category">
     <div> 
         <h3>Filter by category</h3>
-            <select>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
+            <select  id="category">
+            <option value="">Category</option>
+            <option value="veg">Veg</option>
+            <option value="non-veg">Non-Veg</option>
+            <option value="started">Starter</option>
 
             </select>
             <br>
-            <h3>Filter by category</h3>
-            <select >
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
+            <h3>Filter by ORIGIN</h3>
+            <select  id="origin">
+                <option value="">ORIGIN</option>
+                <option value="Indian">Indian</option>
+                <option value="Chineese">Chineese</option>
+                <option value="Italian">Italian</option>
             </select>
+            <br>
+
+            <div>
+                <h3>Filter By Price Ran</h3>
+                <input type="number">
+                <input type="number" placeholder="to">
+                <br>
+                <button>Filter</button>
+            </div>
      
+    </div>
+
+
+    <div class="container">
+        <h3>Card Display</h3>
     </div>
     </section>
 </body>
